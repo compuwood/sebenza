@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "906407921360",
+    "firebase_url": "https://sabenza-b13aa.firebaseio.com",
+    "project_id": "sabenza-b13aa",
+    "storage_bucket": "sabenza-b13aa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:906407921360:android:05b6f6a90d8d81a1",
+        "android_client_info": {
+          "package_name": "mad.apps.sabenza"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "906407921360-a6os409jbp4bfe3qdjjcv29dvebmpcem.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mad.apps.sabenza",
+            "certificate_hash": "f9e0d270672f86182185a0438b3e7dfe3fab7d43"
+          }
+        },
+        {
+          "client_id": "906407921360-6a2v5k5mb8ut2cc6p5u33rg7ad4fn8ge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGfpmhaE_G3N8CBQXrR1cqFJJbsH3qK24"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "906407921360-6a2v5k5mb8ut2cc6p5u33rg7ad4fn8ge.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

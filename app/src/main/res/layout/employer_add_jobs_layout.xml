@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <mad.apps.sabenza.ui.widget.headerviewbase.HeaderViewBase
+        android:id="@+id/employer_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gradient_background_employer"
+        app:subtitle="Add the jobs you need done"
+        app:title="Add Jobs" />
+
+    <ImageView
+        android:id="@+id/add_job_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/employer_header"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="-24dp"
+        android:layout_marginBottom="-24dp"
+        android:src="@drawable/add_circle_button" />
+
+    <TextView
+        android:id="@+id/add_first_job_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_below="@id/employer_header"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/montserrat_light"
+        android:textColor="@color/armadillo"
+        android:textSize="16dp"
+        android:text="You can now add a job or skill to your project. You can also set the date, time, and allocate a budget to each skill. You can add as many skills to your project as you need to.\n\n Tap the '+' button to get started."/>
+
+    <mad.apps.sabenza.ui.widget.FooterButtonViewBase
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/nice_blue"
+        android:layout_alignParentBottom="true"
+        app:buttonText="Next" />
+
+
+</RelativeLayout>

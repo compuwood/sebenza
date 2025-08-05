@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#5CB8DD</color>
+
+    <color name="white">#ffffff</color>
+    <color name="nice_blue">#1581ba</color>
+
+    <color name="dim_gray">#6a6a6a</color>
+    <color name="aluminum">#979797</color>
+    <color name="facebook">#4667B6</color>
+    <color name="star_dust">#A0A0A0</color>
+    <color name="armadillo">#4A4A4A</color>
+    <color name="gallery">#EFEFEF</color>
+    <color name="faded_dark">#bf000000</color>
+    <color name="almost_black">#dd000000</color>
+    <color name="black">#030303</color>
+    <color name="cerulean">#25B6E2</color>
+    <color name="jelly_bean">#1B83A3</color>
+    <color name="very_light_gray">#CECECE</color>
+    <color name="malibu">#5CB8DD</color>
+    <color name="jumbo">#868686</color>
+    <color name="silver">#C0BEBE</color>
+    <color name="fuscous_gray">#3C3C3C</color>
+    <color name="harvard_crimson">#CA001A</color>
+    <color name="keppel">#2EB3A1</color>
+
+</resources>

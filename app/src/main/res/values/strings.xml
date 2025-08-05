@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Sebenza</string>
+    <string name="firebase_storage_bucket_url">gs://sabenza-b13aa.appspot.com</string>
+</resources>

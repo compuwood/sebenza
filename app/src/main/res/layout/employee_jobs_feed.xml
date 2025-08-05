@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <mad.apps.sabenza.ui.widget.headerviewbase.HeaderViewBase
+        android:id="@+id/employee_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gradient_background_employee"
+        app:showBack="false"
+        app:icon="@drawable/skills_icon"
+        app:subtitle="Set up your account"
+        app:title="Jobs Feed" />
+
+    <mad.apps.sabenza.ui.widget.tablayout.TabContainerView
+        android:id="@+id/employer_projects_jobs_tab_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/navigation_footer_height"
+        android:layout_below="@+id/employee_header"
+        app:childLayout="@layout/employee_projects_jobs_container"
+        app:isEmployer="false"
+        android:orientation="vertical" />
+
+    <mad.apps.sabenza.ui.widget.navigationfooter.NavigationFooter
+        android:id="@+id/employee_navigation_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isEmployerFooter="false"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

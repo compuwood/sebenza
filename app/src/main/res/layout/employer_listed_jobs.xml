@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <mad.apps.sabenza.ui.widget.headerviewbase.HeaderViewBase
+        android:id="@+id/employer_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background_employer"
+        app:subtitle="View jobs and add more"
+        app:title="Listed Jobs" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/job_list_recycler"
+        android:layout_below="@id/employer_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/footer_height"
+        android:clipToPadding="false"/>
+
+    <ImageView
+        android:id="@+id/add_job_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/employer_header"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="-24dp"
+        android:layout_marginBottom="-24dp"
+        android:src="@drawable/add_circle_button" />
+
+    <mad.apps.sabenza.ui.widget.FooterButtonViewBase
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/nice_blue"
+        app:buttonText="Next" />
+
+    <mad.apps.sabenza.ui.widget.ErrorModal
+        android:id="@+id/error_modal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <mad.apps.sabenza.ui.widget.LoadingScreen
+        android:id="@+id/loading_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

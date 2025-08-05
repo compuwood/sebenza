@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <mad.apps.sabenza.ui.widget.headerviewbase.HeaderViewBase
+        android:id="@+id/employee_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background_employee"
+        app:title="Create Profile"
+        app:subtitle="Enter your personal details"
+        app:icon="@drawable/employer_signup_icon"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/employee_header"
+        android:layout_marginBottom="@dimen/footer_height">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/employee_firstname_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="First Name"
+                android:inputType="textCapWords"
+                android:textColor="@color/dim_gray"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/employee_lastname_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="Last Name"
+                android:inputType="textCapWords"
+                android:textColor="@color/dim_gray"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/employee_phone_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="Mobile Number"
+                android:inputType="phone"
+                android:textColor="@color/dim_gray"
+                android:textSize="18dp" />
+
+
+            <LinearLayout
+                android:id="@+id/signup_employee_drivers_licence_checkbox_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="50dp">
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/signup_employee_drivers_licence_checkbox"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:scaleX="1.3"
+                    android:scaleY="1.3"
+                    android:layout_gravity="center_vertical"
+                    android:buttonTint="@color/jelly_bean"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="I have a valid drivers licence"
+                    android:fontFamily="@font/montserrat_light"
+                    android:layout_marginLeft="16dp"
+                    android:textColor="@color/dim_gray"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/signup_employee_scan_upload_docs_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/camera_icon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Scan and Upload ID Docs"
+                    android:fontFamily="@font/montserrat_light"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/dim_gray"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/signup_employee_upload_profile_picture_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="45dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/camera_icon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Upload profile picture"
+                    android:fontFamily="@font/montserrat_light"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/dim_gray"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <mad.apps.sabenza.ui.widget.FooterButtonViewBase
+        android:id="@+id/signup_employee_next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/cerulean"
+        android:layout_alignParentBottom="true"
+        app:buttonText="Next"/>
+
+</RelativeLayout>

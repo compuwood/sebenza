@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <mad.apps.sabenza.ui.widget.headerviewbase.HeaderViewBase
+        android:id="@+id/employer_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/gradient_background_employer"
+        app:icon="@drawable/project_details_icon"
+        app:subtitle="Tell us about your project"
+        app:title="Project Details" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingRight="25dp"
+        android:paddingLeft="25dp"
+        android:layout_below="@id/employer_header"
+        >
+
+    <EditText
+        android:id="@+id/project_name_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/montserrat_light"
+        android:hint="Project Name"
+        android:inputType="textCapWords"
+        android:textColor="@color/dim_gray"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/project_description_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/montserrat_light"
+        android:hint="Project Description"
+        android:inputType="textCapSentences"
+        android:textColor="@color/dim_gray"
+        android:textSize="18dp" />
+
+    </LinearLayout>
+
+
+    <mad.apps.sabenza.ui.widget.FooterButtonViewBase
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/nice_blue"
+        android:layout_alignParentBottom="true"
+        app:buttonText="Next" />
+
+
+</RelativeLayout>

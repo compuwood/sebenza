@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <mad.apps.sabenza.ui.widget.headerviewbase.HeaderViewBase
+        android:id="@+id/employer_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background_employer"
+        app:icon="@drawable/configure_skill_icon"
+        app:subtitle="Tell us more about this job"
+        app:title="Configure Skill" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/employer_header"
+        android:layout_above="@+id/next_button"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <TextView
+            android:id="@+id/skill_name_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_bold"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:text="Painter"
+            />
+
+        <!--Dummy layout to take away focus from description-->
+        <LinearLayout
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="0px"
+            android:layout_height="0px"/>
+
+        <EditText
+            android:id="@+id/skill_description_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-5dp"
+            android:fontFamily="@font/montserrat_light"
+            android:hint="Add a brief description of this job to help potential employees better understand your needs."
+            android:minLines="3"
+            android:lineSpacingExtra="6dp"
+            android:gravity="bottom|left"
+            android:inputType="textMultiLine"
+            android:textColor="@color/dim_gray"
+            android:textSize="18dp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/montserrat_light"
+                android:textSize="16dp"
+                android:textColor="@color/dim_gray"
+                android:text="Budget for job"
+                />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:fontFamily="@font/montserrat_light"
+                android:layout_toLeftOf="@+id/budget_edittext"
+                android:textSize="16dp"
+                android:textColor="@color/dim_gray"
+                android:text="$"
+                />
+
+            <EditText
+                android:id="@+id/budget_edittext"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="-10dp"
+                android:fontFamily="@font/montserrat_light"
+                android:inputType="numberDecimal"
+                android:textColor="@color/dim_gray"
+                android:textSize="18dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:fontFamily="@font/montserrat_light"
+                android:textSize="16dp"
+                android:textColor="@color/dim_gray"
+                android:text="Years of Experience"
+                />
+
+            <ImageView
+                android:id="@+id/decrease_years_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@+id/years_exp_textview"
+                android:src="@drawable/minus_control" />
+
+            <TextView
+                android:id="@+id/years_exp_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="30dp"
+                android:layout_toLeftOf="@+id/increase_years_button"
+                android:fontFamily="@font/roboto_regular"
+                android:text="1"
+                android:textColor="@color/dim_gray"
+                android:textSize="19dp" />
+
+            <ImageView
+                android:id="@+id/increase_years_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/plus_control" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <mad.apps.sabenza.ui.widget.FooterButtonViewBase
+        android:id="@+id/next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/nice_blue"
+        app:buttonText="Next" />
+
+</RelativeLayout>

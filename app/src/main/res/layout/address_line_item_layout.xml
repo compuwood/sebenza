@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
+    android:paddingTop="50dp">
+
+    <TextView
+        android:id="@+id/line1_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="20dp"
+        android:textColor="@color/armadillo"
+        android:letterSpacing="0.02"
+        />
+
+    <TextView
+        android:id="@+id/line2_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/city_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/postal_code_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/default_address_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="14dp"
+        android:letterSpacing="0.02"
+        android:textColor="@color/star_dust"
+        android:text="This is you current default address"
+        />
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/star_dust"
+        android:layout_marginTop="30dp"
+        />
+
+</LinearLayout>

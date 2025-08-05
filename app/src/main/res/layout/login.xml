@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <mad.apps.sabenza.ui.widget.headerviewbase.HeaderViewBase
+        android:id="@+id/employer_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background_employer"
+        app:icon="@drawable/login_icon"
+        app:subtitle="Welcome back"
+        app:title="Login" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/employer_header"
+        android:layout_marginBottom="@dimen/footer_height">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <EditText
+                android:id="@+id/employer_login_email_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/dim_gray"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/employer_login_password_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:textColor="@color/dim_gray"
+                android:textSize="18dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/login_employer_forgot_password_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:fontFamily="@font/asap_regular"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/armadillo"
+                    android:textSize="16dp" />
+            </RelativeLayout>
+
+            <!--Facebook button-->
+            <!--<FrameLayout-->
+            <!--android:id="@+id/employer_facebook_login_button"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="@dimen/footer_height"-->
+            <!--android:layout_marginLeft="25dp"-->
+            <!--android:layout_marginRight="25dp"-->
+            <!--android:layout_marginTop="50dp"-->
+            <!--android:background="@drawable/facebook_button_background">-->
+            <!--<LinearLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal"-->
+            <!--android:layout_gravity="center">-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="9dp"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:src="@drawable/fb_logo" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/employer_facebook_login_button_text"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="@font/montserrat_regular"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:text="Log In With Facebook"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="18dp" />-->
+
+            <!--</LinearLayout>-->
+            <!--</FrameLayout>-->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <mad.apps.sabenza.ui.widget.FooterButtonViewBase
+        android:id="@+id/login_employer_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/nice_blue"
+        app:buttonText="Login" />
+
+    <RelativeLayout
+        android:id="@+id/login_employer_forgot_password_modal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/faded_dark"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@color/gallery"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/employer_forgot_password_email_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="Enter email address"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/dim_gray"
+                android:textSize="18dp" />
+
+            <FrameLayout
+                android:id="@+id/employer_reset_password_button"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/cerulean">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="Reset Password"
+                    android:textColor="@color/white"
+                    android:textSize="18dp" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <mad.apps.sabenza.ui.widget.ErrorModal
+        android:id="@+id/login_employer_error_modal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+
+    <mad.apps.sabenza.ui.widget.LoadingScreen
+        android:id="@+id/login_employer_loading_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

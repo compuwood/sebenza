@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <mad.apps.sabenza.ui.widget.headerviewbase.HeaderViewBase
+        android:id="@+id/employer_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background_employer"
+        app:icon="@drawable/home_icon"
+        app:subtitle="Provide location of your first job"
+        app:title="Your Address" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/employer_header"
+        android:layout_marginBottom="@dimen/footer_height">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <EditText
+                android:id="@+id/employer_addressline1_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="Address Line 1"
+                android:inputType="textCapWords"
+                android:textColor="@color/dim_gray"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/employer_city_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="City"
+                android:inputType="textCapWords"
+                android:textColor="@color/dim_gray"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/employer_state_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="State"
+                android:inputType="textCapWords"
+                android:textColor="@color/dim_gray"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <EditText
+                    android:id="@+id/employer_zipcode_edittext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:gravity="left"
+                    android:hint="Zip Code"
+                    android:inputType="text"
+                    android:textColor="@color/dim_gray"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <mad.apps.sabenza.ui.widget.FooterButtonViewBase
+        android:id="@+id/signup_employer_address_next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/nice_blue"
+        android:layout_alignParentBottom="true"
+        app:buttonText="Next" />
+
+</RelativeLayout>

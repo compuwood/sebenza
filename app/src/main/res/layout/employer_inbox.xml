@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <mad.apps.sabenza.ui.widget.headerviewbase.HeaderViewBase
+        android:id="@+id/employer_header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/header_height"
+        android:background="@drawable/gradient_background_employer"
+        app:icon="@drawable/chat_icon"
+        app:subtitle="Your Messages"
+        app:title="Inbox" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/messages_recycler"
+        android:layout_below="@id/employer_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/navigation_footer_height"
+        android:clipToPadding="false"/>
+
+    <mad.apps.sabenza.ui.widget.navigationfooter.NavigationFooter
+        android:id="@+id/employer_navigation_footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:isEmployerFooter="true" />
+
+    <mad.apps.sabenza.ui.widget.ErrorModal
+        android:id="@+id/error_modal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <mad.apps.sabenza.ui.widget.LoadingScreen
+        android:id="@+id/loading_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <mad.apps.sabenza.ui.widget.ConfirmModal
+        android:id="@+id/confirm_modal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:confirmMessage="Are you sure you would like to delete this message thread?"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

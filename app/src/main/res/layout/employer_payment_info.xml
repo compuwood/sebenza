@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <mad.apps.sabenza.ui.widget.headerviewbase.HeaderViewBase
+        android:id="@+id/employer_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background_employer"
+        app:icon="@drawable/payment_icon"
+        app:subtitle="Fill in your payment info"
+        app:title="Payment Info" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/employer_header"
+        android:layout_marginBottom="@dimen/footer_height">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp">
+
+            <EditText
+                android:id="@+id/employer_name_on_card_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="Name on Card"
+                android:inputType="textCapWords"
+                android:textColor="@color/dim_gray"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/employer_card_number_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="Card Number"
+                android:inputType="number"
+                android:textColor="@color/dim_gray"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+                <EditText
+                    android:id="@+id/employer_expiry_date_edittext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:gravity="left"
+                    android:hint="Expiry Date"
+                    android:inputType="date"
+                    android:textColor="@color/dim_gray"
+                    android:textSize="18dp" />
+
+                <FrameLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"/>
+
+                <EditText
+                    android:id="@+id/employer_cvv_edittext"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginTop="50dp"
+                    android:fontFamily="@font/montserrat_light"
+                    android:gravity="left"
+                    android:hint="CVV"
+                    android:maxLength="3"
+                    android:inputType="number"
+                    android:textColor="@color/dim_gray"
+                    android:textSize="18dp" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/employer_coupon_code_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="Apply Coupon Code"
+                android:inputType="text"
+                android:textColor="@color/dim_gray"
+                android:textSize="18dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <mad.apps.sabenza.ui.widget.FooterButtonViewBase
+        android:id="@+id/signup_employer_complete_profile_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/nice_blue"
+        app:buttonText="Complete Profile" />
+
+</RelativeLayout>

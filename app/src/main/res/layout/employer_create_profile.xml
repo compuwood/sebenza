@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <mad.apps.sabenza.ui.widget.headerviewbase.HeaderViewBase
+        android:id="@+id/employer_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background_employer"
+        app:title="Create Profile"
+        app:subtitle="Enter your details"
+        app:icon="@drawable/employer_signup_icon"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/employer_header"
+        android:layout_marginBottom="@dimen/footer_height">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/employer_firstname_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="First Name"
+                android:inputType="textCapWords"
+                android:textColor="@color/dim_gray"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/employer_lastname_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="Last Name"
+                android:inputType="textCapWords"
+                android:textColor="@color/dim_gray"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/employer_phone_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="Mobile Number"
+                android:inputType="phone"
+                android:textColor="@color/dim_gray"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/employer_company_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="Company Name"
+                android:inputType="textCapWords"
+                android:textColor="@color/dim_gray"
+                android:textSize="18dp" />
+
+
+            <EditText
+                android:id="@+id/employer_company_description_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/montserrat_light"
+                android:hint="Tell Us About Your Company"
+                android:inputType="textCapSentences"
+                android:textColor="@color/dim_gray"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:id="@+id/signup_employer_upload_profile_picture_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="45dp"
+                android:layout_marginBottom="45dp">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/camera_icon"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Upload profile picture"
+                    android:fontFamily="@font/montserrat_light"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/dim_gray"
+                    android:textSize="18dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <mad.apps.sabenza.ui.widget.FooterButtonViewBase
+        android:id="@+id/signup_employer_next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/nice_blue"
+        android:layout_alignParentBottom="true"
+        app:buttonText="Next"/>
+
+</RelativeLayout>

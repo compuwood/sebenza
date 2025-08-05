@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <mad.apps.sabenza.ui.widget.headerviewbase.HeaderViewBase
+        android:id="@+id/employee_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_background_employee"
+        app:icon="@drawable/skills_icon"
+        app:subtitle="Tell us what you can do"
+        app:title="Add Skills" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/employee_header"
+        android:layout_marginBottom="@dimen/footer_height"
+        android:orientation="vertical">
+
+        <mad.apps.sabenza.ui.widget.AutocompleteHandlesBack
+            android:id="@+id/employee_add_skills_edittext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/montserrat_light"
+            android:hint="Add Skills"
+            android:inputType="textCapWords"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="40dp"
+            android:textColor="@color/dim_gray"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/first_item_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="32dp"
+            android:text="Years of experience"
+            android:fontFamily="@font/montserrat_light"
+            android:textSize="12dp"
+            android:textColor="@color/dim_gray"
+            android:visibility="gone"
+            />
+
+        <TextView
+            android:id="@+id/no_skills_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:fontFamily="@font/montserrat_light"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:text="You currently have no skills added to your profile."
+            android:textColor="@color/armadillo"
+            android:textSize="16dp"
+             />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/skills_list_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <mad.apps.sabenza.ui.widget.FooterButtonViewBase
+        android:id="@+id/signup_employee_next_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/cerulean"
+        app:buttonText="Next" />
+
+</RelativeLayout>

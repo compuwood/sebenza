@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="HeaderViewBase">
+        <attr name="title" format="string"/>
+        <attr name="subtitle" format="string"/>
+        <attr name="icon" format="reference"/>
+        <attr name="showBack" format="boolean"/>
+        <attr name="liftIcon" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="FooterButtonViewBase">
+        <attr name="buttonText" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="FooterButtonSplit">
+        <attr name="LeftText" format="string"/>
+        <attr name="RightText" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="ErrorModal">
+        <attr name="errorText" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="CongratsModal">
+        <attr name="message" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="ConfirmModal">
+        <attr name="confirmMessage" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="TabContainerView">
+        <attr name="childLayout" format="reference"/>
+        <attr name="isEmployer" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="NavigationFooter">
+        <attr name="isEmployerFooter" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="ProjectsJobsContainerView">
+        <attr name="isEmployerViewing" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="LoadingScreen">
+        <attr name="showBackground" format="boolean"/>
+    </declare-styleable>
+</resources>

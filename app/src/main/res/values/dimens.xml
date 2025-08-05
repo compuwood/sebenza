@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_height">140dp</dimen>
+    <dimen name="header_height_small">128dp</dimen>
+    <dimen name="footer_height">60dp</dimen>
+    <dimen name="navigation_footer_height">56dp</dimen>
+</resources>
